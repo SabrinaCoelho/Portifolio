@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets\headerToggle.css">
+    <link rel="stylesheet" href="assets\geral.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <title>Sabrina Coelho</title>
+</head>
+<body onload="main()">
+    <header>
+        <nav>
+            <input type="checkbox" name="" id="checkHam">
+            <label for="checkHam" class="menuHam">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </label>
+            <ul class="topicosNav">
+                <li>
+                    <a href="#about">
+                        Sobre mim
+                    </a>
+                </li>
+                <li>
+                    <a href="#projetos">
+                        Projetos
+                    </a>
+                </li>
+                <li>
+                    <a href="#certificados">
+                        Certificados
+                    </a>
+                </li>
+                <li>
+                    <a href="#contato">
+                        Contato
+                    </a>
+                </li>
+                <li id="mode">
+                    <input type="checkbox" name="mode" id="theme" onchange="setMode()">
+                    <label for="theme" id="dark">
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 17C10.952 18.6176 16.6829 8.75775 11 3C16.0007 3.13144 20 7.11149 20 12C20 16.9715 16.1188 21 11 21C7.77111 21 4.65938 19.4319 3 17Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </label>
+                    <label for="theme" id="light">
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 10H3M17 10H19M10 1V3M10 17V19M3.00002 3.00002L5.00002 5.00002M15 15L17 17M3.00006 17L5.00006 15M14.9999 4.99998L16.9999 2.99998M13 10C13 11.6569 11.6569 13 10 13C8.34315 13 7 11.6569 7 10C7 8.34315 8.34315 7 10 7C11.6569 7 13 8.34315 13 10Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="apresentacao">
+        <div class="profilePic"></div>
+        <h1>Sabrina Coelho</h1>
+    </section>
+    <section class="about">
+        <h1>Sobre mim</h1>
+        <p>Sou Sabrina Coelho, tenho 23 anos e atuo como desenvolvedora fron-end há quase 1 ano. As tecnologias que mais utilizo são: HTML5, CSS3, Bootstrap, JavaScript, TypeScript, Angular e Java/Python para <i>competitive programming</i>. Curso o 5° período do curso de Sistemas de Informação na Universidade do Vale do Sapucaí (Univás).</p>
+    </section>
+    <section class="projetos">
+        <h1>Projetos</h1>
+        <div class="projeto">
+            <div class="imgProjeto">
+                <img src="assets\siteFarmacia.PNG" alt="projeto de site para curso de Farmácia da Univás">
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Tecnologias:</td>
+                        <td>
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Type=Default, showSymbol=True, showText=False">
+                                            <g id="symbol">
+                                                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M71.0852 460.819L30 0H481.456L440.327 460.746L255.451 512L71.0852 460.819Z" fill="#E44D26"/>
+                                                <path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M255.728 472.824L405.116 431.408L440.263 37.6788H255.728V472.824Z" fill="#F16529"/>
+                                            <g id="Union">
+                                                <path d="M180.94 208.59H255.728V265.107H129.253L114.009 94.1969H255.728V150.715H175.775L180.94 208.59Z" fill="#EBEBEB"/>
+                                                <path d="M255.48 355.438L255.728 355.372V414.174L255.468 414.246L139.696 382.107L131.778 293.366H188.513L192.536 338.442L255.48 355.438Z" fill="#EBEBEB"/>
+                                            </g>
+                                            <g id="Union_2">
+                                                <path d="M255.532 94.1969H397.11L392.049 150.715H255.532V94.1969Z" fill="white"/>
+                                                <path d="M255.532 265.107V208.59H386.907L385.528 223.766L371.396 382.107L255.532 414.219V355.419L318.567 338.406L325.128 265.107H255.532Z" fill="white"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M71.0864 460.816L30 0H481.474L440.344 460.741L255.464 512L71.0864 460.816Z" fill="#0071BC"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 472.795L405.323 431.748L440.282 38.3764H256.116V472.795Z" fill="#29ABE2"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M124.047 207.678L128.996 264.112L256.116 207.678V151.152L124.047 207.678Z" fill="#B3B3B3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M396.906 90.8141L256.116 151.152V207.678L392.052 147.248L396.906 90.8141Z" fill="#E6E6E6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 355.337L255.679 355.403L192.637 338.472L188.518 293.458H131.78L139.698 382.139L255.667 414.249L256.116 414.143V355.337Z" fill="#E6E6E6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 207.678V264.112H325.138L318.864 337.896L256.116 355.386V414.187L371.701 382.077L386.921 207.678H256.116Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 207.678H124.047L128.996 264.112H256.116V207.678Z" fill="#E6E6E6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 147.248V90.8141H255.543H114.013L119.021 147.248H256.116Z" fill="#E6E6E6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 90.8141V146.541V147.248H392.052L396.906 90.8141H256.116Z" fill="white"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Type=Default">
+                                        <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M6 6H506V506H6V6Z" fill="#F7DF1E"/>
+                                        <path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M137.469 423.837L175.732 400.68C183.114 413.768 189.829 424.842 205.936 424.842C221.376 424.842 231.11 418.802 231.11 395.31V235.548H278.097V395.975C278.097 444.641 249.57 466.793 207.95 466.793C170.362 466.793 148.543 447.325 137.468 423.833" fill="black"/>
+                                        <path id="Shape_3" fill-rule="evenodd" clip-rule="evenodd" d="M303.619 418.802L341.878 396.65C351.949 413.098 365.039 425.179 388.196 425.179C407.665 425.179 420.08 415.445 420.08 402.02C420.08 385.91 407.327 380.203 385.846 370.809L374.102 365.771C340.202 351.341 317.714 333.217 317.714 294.955C317.714 259.714 344.564 232.862 386.519 232.862C416.391 232.862 437.871 243.267 453.308 270.454L416.724 293.947C408.668 279.516 399.945 273.811 386.52 273.811C372.759 273.811 364.032 282.537 364.032 293.947C364.032 308.044 372.759 313.751 392.895 322.478L404.641 327.512C444.581 344.63 467.069 362.081 467.069 401.348C467.069 443.641 433.842 466.797 389.204 466.797C345.572 466.797 317.379 445.989 303.62 418.802" fill="black"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Descrição:</td>
+                        <td>Este projeto simula um site para o curso de Farmácia da Univás. Utilizado as tecnologias HTML5, CSS3 e JS para criar um site com 5 páginas estáticas e responsivas.</td>
+                    </tr>
+                    <tr>
+                        <td>Links relacionados:</td>
+                        <td>
+                            <div class="btnContainer">
+                                <a href="https://www.figma.com/file/nFr20QXeqIzfKaN86s4HA0/Farmácia?t=3JURSZo9iJ61S535-0" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3872 2H15.2104C17.277 2 18.9523 3.6753 18.9523 5.74189C18.9523 7.80849 17.277 9.48379 15.2104 9.48379H11.3872V2ZM12.6129 3.22569V8.2581H15.2104C16.6 8.2581 17.7266 7.13156 17.7266 5.74189C17.7266 4.35224 16.6 3.22569 15.2104 3.22569H12.6129Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.04773 5.74189C5.04773 3.6753 6.72303 2 8.78963 2H12.6128V9.48379H8.78963C6.72303 9.48379 5.04773 7.80849 5.04773 5.74189ZM8.78963 3.22569C7.39996 3.22569 6.27342 4.35224 6.27342 5.74189C6.27342 7.13156 7.39996 8.2581 8.78963 8.2581H11.3871V3.22569H8.78963Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.04773 12.0001C5.04773 9.93347 6.72303 8.25818 8.78963 8.25818H12.6128V15.742H8.78963C6.72303 15.742 5.04773 14.0667 5.04773 12.0001ZM8.78963 9.48387C7.39996 9.48387 6.27342 10.6104 6.27342 12.0001C6.27342 13.3897 7.39996 14.5163 8.78963 14.5163H11.3871V9.48387H8.78963Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.04773 18.2581C5.04773 16.1915 6.72303 14.5162 8.78963 14.5162H12.6128V18.2174C12.6128 20.3116 10.8937 22 8.80982 22C6.74836 22 5.04773 20.3298 5.04773 18.2581ZM8.78963 15.7419C7.39996 15.7419 6.27342 16.8684 6.27342 18.2581C6.27342 19.6426 7.41501 20.7743 8.80982 20.7743C10.2271 20.7743 11.3871 19.6244 11.3871 18.2174V15.7419H8.78963Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3872 12.0001C11.3872 9.93347 13.0625 8.25818 15.1291 8.25818H15.2104C17.277 8.25818 18.9523 9.93347 18.9523 12.0001C18.9523 14.0667 17.277 15.742 15.2104 15.742H15.1291C13.0625 15.742 11.3872 14.0667 11.3872 12.0001ZM15.1291 9.48387C13.7394 9.48387 12.6129 10.6104 12.6129 12.0001C12.6129 13.3897 13.7394 14.5163 15.1291 14.5163H15.2104C16.6 14.5163 17.7266 13.3897 17.7266 12.0001C17.7266 10.6104 16.6 9.48387 15.2104 9.48387H15.1291Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="btnContainer">
+                                <a href="https://github.com/SabrinaCoelho/siteCursoFarmacia" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.2467C6.475 2.2467 2 6.7217 2 12.2467C2 16.6717 4.8625 20.4092 8.8375 21.7342C9.3375 21.8217 9.525 21.5217 9.525 21.2592C9.525 21.0217 9.5125 20.2342 9.5125 19.3967C7 19.8592 6.35 18.7842 6.15 18.2217C6.0375 17.9342 5.55 17.0467 5.125 16.8092C4.775 16.6217 4.275 16.1592 5.1125 16.1467C5.9 16.1342 6.4625 16.8717 6.65 17.1717C7.55 18.6842 8.9875 18.2592 9.5625 17.9967C9.65 17.3467 9.9125 16.9092 10.2 16.6592C7.975 16.4092 5.65 15.5467 5.65 11.7217C5.65 10.6342 6.0375 9.7342 6.675 9.0342C6.575 8.7842 6.225 7.7592 6.775 6.3842C6.775 6.3842 7.6125 6.1217 9.525 7.4092C10.325 7.1842 11.175 7.0717 12.025 7.0717C12.875 7.0717 13.725 7.1842 14.525 7.4092C16.4375 6.1092 17.275 6.3842 17.275 6.3842C17.825 7.7592 17.475 8.7842 17.375 9.0342C18.0125 9.7342 18.4 10.6217 18.4 11.7217C18.4 15.5592 16.0625 16.4092 13.8375 16.6592C14.2 16.9717 14.5125 17.5717 14.5125 18.5092C14.5125 19.8467 14.5 20.9217 14.5 21.2592C14.5 21.5217 14.6875 21.8342 15.1875 21.7342C17.1727 21.064 18.8977 19.7882 20.1198 18.0862C21.3419 16.3843 21.9995 14.342 22 12.2467C22 6.7217 17.525 2.2467 12 2.2467Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="btnContainer">
+                                <a class="global" href="https://sabrinacoelho.github.io/siteCursoFarmacia/" target="_blank" >
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.15" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="white"/>
+                                        <path d="M21 12C21 16.9706 16.9706 21 12 21M21 12C21 7.02944 16.9706 3 12 3M21 12H3M12 21C7.02944 21 3 16.9706 3 12M12 21C12 21 16 18 16 12C16 6 12 3 12 3M12 21C12 21 8 18 8 12C8 6 12 3 12 3M3 12C3 7.02944 7.02944 3 12 3" stroke="white" stroke-width="1.5"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="projeto">
+            <div class="imgProjeto">
+                <img src="assets\siteCopa.PNG" alt="projeto de site para rankings da Copa">
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Tecnologias:</td>
+                        <td>
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Type=Default, showSymbol=True, showText=False">
+                                            <g id="symbol">
+                                                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M71.0852 460.819L30 0H481.456L440.327 460.746L255.451 512L71.0852 460.819Z" fill="#E44D26"/>
+                                                <path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M255.728 472.824L405.116 431.408L440.263 37.6788H255.728V472.824Z" fill="#F16529"/>
+                                            <g id="Union">
+                                                <path d="M180.94 208.59H255.728V265.107H129.253L114.009 94.1969H255.728V150.715H175.775L180.94 208.59Z" fill="#EBEBEB"/>
+                                                <path d="M255.48 355.438L255.728 355.372V414.174L255.468 414.246L139.696 382.107L131.778 293.366H188.513L192.536 338.442L255.48 355.438Z" fill="#EBEBEB"/>
+                                            </g>
+                                            <g id="Union_2">
+                                                <path d="M255.532 94.1969H397.11L392.049 150.715H255.532V94.1969Z" fill="white"/>
+                                                <path d="M255.532 265.107V208.59H386.907L385.528 223.766L371.396 382.107L255.532 414.219V355.419L318.567 338.406L325.128 265.107H255.532Z" fill="white"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M71.0864 460.816L30 0H481.474L440.344 460.741L255.464 512L71.0864 460.816Z" fill="#0071BC"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 472.795L405.323 431.748L440.282 38.3764H256.116V472.795Z" fill="#29ABE2"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M124.047 207.678L128.996 264.112L256.116 207.678V151.152L124.047 207.678Z" fill="#B3B3B3"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M396.906 90.8141L256.116 151.152V207.678L392.052 147.248L396.906 90.8141Z" fill="#E6E6E6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 355.337L255.679 355.403L192.637 338.472L188.518 293.458H131.78L139.698 382.139L255.667 414.249L256.116 414.143V355.337Z" fill="#E6E6E6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 207.678V264.112H325.138L318.864 337.896L256.116 355.386V414.187L371.701 382.077L386.921 207.678H256.116Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 207.678H124.047L128.996 264.112H256.116V207.678Z" fill="#E6E6E6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 147.248V90.8141H255.543H114.013L119.021 147.248H256.116Z" fill="#E6E6E6"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M256.116 90.8141V146.541V147.248H392.052L396.906 90.8141H256.116Z" fill="white"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Type=Default">
+                                        <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M6 6H506V506H6V6Z" fill="#F7DF1E"/>
+                                        <path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M137.469 423.837L175.732 400.68C183.114 413.768 189.829 424.842 205.936 424.842C221.376 424.842 231.11 418.802 231.11 395.31V235.548H278.097V395.975C278.097 444.641 249.57 466.793 207.95 466.793C170.362 466.793 148.543 447.325 137.468 423.833" fill="black"/>
+                                        <path id="Shape_3" fill-rule="evenodd" clip-rule="evenodd" d="M303.619 418.802L341.878 396.65C351.949 413.098 365.039 425.179 388.196 425.179C407.665 425.179 420.08 415.445 420.08 402.02C420.08 385.91 407.327 380.203 385.846 370.809L374.102 365.771C340.202 351.341 317.714 333.217 317.714 294.955C317.714 259.714 344.564 232.862 386.519 232.862C416.391 232.862 437.871 243.267 453.308 270.454L416.724 293.947C408.668 279.516 399.945 273.811 386.52 273.811C372.759 273.811 364.032 282.537 364.032 293.947C364.032 308.044 372.759 313.751 392.895 322.478L404.641 327.512C444.581 344.63 467.069 362.081 467.069 401.348C467.069 443.641 433.842 466.797 389.204 466.797C345.572 466.797 317.379 445.989 303.62 418.802" fill="black"/>
+                                    </g>
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Descrição:</td>
+                        <td>Este projeto com o tema da Copa do Mundo de 2022 organiza uma tabela conforme o somatório de pontos e gols de cada time conforme as partidas. As regras são: 1 ponto para os times da partida em caso de empate e, caso contrário, 3 pontos para o time vencedor. Utilizado as tecnologias HTML5, CSS3 e JS para criar o site estático e responsivo.</td>
+                    </tr>
+                    <tr>
+                        <td>Links relacionados:</td>
+                        <td>
+                            <div class="btnContainer">
+                                <a href="https://www.figma.com/file/sKrMoKfjBANWugktWpUp2B/Simulador-de-jogos-da-Copa?node-id=0%3A1&t=3JURSZo9iJ61S535-0" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3872 2H15.2104C17.277 2 18.9523 3.6753 18.9523 5.74189C18.9523 7.80849 17.277 9.48379 15.2104 9.48379H11.3872V2ZM12.6129 3.22569V8.2581H15.2104C16.6 8.2581 17.7266 7.13156 17.7266 5.74189C17.7266 4.35224 16.6 3.22569 15.2104 3.22569H12.6129Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.04773 5.74189C5.04773 3.6753 6.72303 2 8.78963 2H12.6128V9.48379H8.78963C6.72303 9.48379 5.04773 7.80849 5.04773 5.74189ZM8.78963 3.22569C7.39996 3.22569 6.27342 4.35224 6.27342 5.74189C6.27342 7.13156 7.39996 8.2581 8.78963 8.2581H11.3871V3.22569H8.78963Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.04773 12.0001C5.04773 9.93347 6.72303 8.25818 8.78963 8.25818H12.6128V15.742H8.78963C6.72303 15.742 5.04773 14.0667 5.04773 12.0001ZM8.78963 9.48387C7.39996 9.48387 6.27342 10.6104 6.27342 12.0001C6.27342 13.3897 7.39996 14.5163 8.78963 14.5163H11.3871V9.48387H8.78963Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.04773 18.2581C5.04773 16.1915 6.72303 14.5162 8.78963 14.5162H12.6128V18.2174C12.6128 20.3116 10.8937 22 8.80982 22C6.74836 22 5.04773 20.3298 5.04773 18.2581ZM8.78963 15.7419C7.39996 15.7419 6.27342 16.8684 6.27342 18.2581C6.27342 19.6426 7.41501 20.7743 8.80982 20.7743C10.2271 20.7743 11.3871 19.6244 11.3871 18.2174V15.7419H8.78963Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.3872 12.0001C11.3872 9.93347 13.0625 8.25818 15.1291 8.25818H15.2104C17.277 8.25818 18.9523 9.93347 18.9523 12.0001C18.9523 14.0667 17.277 15.742 15.2104 15.742H15.1291C13.0625 15.742 11.3872 14.0667 11.3872 12.0001ZM15.1291 9.48387C13.7394 9.48387 12.6129 10.6104 12.6129 12.0001C12.6129 13.3897 13.7394 14.5163 15.1291 14.5163H15.2104C16.6 14.5163 17.7266 13.3897 17.7266 12.0001C17.7266 10.6104 16.6 9.48387 15.2104 9.48387H15.1291Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="btnContainer">
+                                <a href="https://github.com/SabrinaCoelho/Simulador-de-partidas-copa-2022" target="_blank">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" fill="black"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.2467C6.475 2.2467 2 6.7217 2 12.2467C2 16.6717 4.8625 20.4092 8.8375 21.7342C9.3375 21.8217 9.525 21.5217 9.525 21.2592C9.525 21.0217 9.5125 20.2342 9.5125 19.3967C7 19.8592 6.35 18.7842 6.15 18.2217C6.0375 17.9342 5.55 17.0467 5.125 16.8092C4.775 16.6217 4.275 16.1592 5.1125 16.1467C5.9 16.1342 6.4625 16.8717 6.65 17.1717C7.55 18.6842 8.9875 18.2592 9.5625 17.9967C9.65 17.3467 9.9125 16.9092 10.2 16.6592C7.975 16.4092 5.65 15.5467 5.65 11.7217C5.65 10.6342 6.0375 9.7342 6.675 9.0342C6.575 8.7842 6.225 7.7592 6.775 6.3842C6.775 6.3842 7.6125 6.1217 9.525 7.4092C10.325 7.1842 11.175 7.0717 12.025 7.0717C12.875 7.0717 13.725 7.1842 14.525 7.4092C16.4375 6.1092 17.275 6.3842 17.275 6.3842C17.825 7.7592 17.475 8.7842 17.375 9.0342C18.0125 9.7342 18.4 10.6217 18.4 11.7217C18.4 15.5592 16.0625 16.4092 13.8375 16.6592C14.2 16.9717 14.5125 17.5717 14.5125 18.5092C14.5125 19.8467 14.5 20.9217 14.5 21.2592C14.5 21.5217 14.6875 21.8342 15.1875 21.7342C17.1727 21.064 18.8977 19.7882 20.1198 18.0862C21.3419 16.3843 21.9995 14.342 22 12.2467C22 6.7217 17.525 2.2467 12 2.2467Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="btnContainer">
+                                <a class="global" href="https://sabrinacoelho.github.io/siteCursoFarmacia/" target="_blank" >
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.15" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="white"/>
+                                        <path d="M21 12C21 16.9706 16.9706 21 12 21M21 12C21 7.02944 16.9706 3 12 3M21 12H3M12 21C7.02944 21 3 16.9706 3 12M12 21C12 21 16 18 16 12C16 6 12 3 12 3M12 21C12 21 8 18 8 12C8 6 12 3 12 3M3 12C3 7.02944 7.02944 3 12 3" stroke="white" stroke-width="1.5"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="certificados">
+        <h1>Certificados</h1>
+        <div class="certificadoContainer">
+            <h3>Curso Angular - Loiane Groner</h3>
+            <p>Disponível em:</p>
+            <a href="https://loiane.training/certificado/Kj0YFx9VTy4vtHA57Fv0">https://loiane.training/certificado/Kj0YFx9VTy4vtHA57Fv0</a>
+        </div>
+        <div class="certificadoContainer">
+            <h3>Certificado de Registro de Programa de Computador - Aplicativo SAAP</h3>
+            <p>Disponível em:</p>
+            <a href="https://drive.google.com/file/d/1_SkgXHeOW7yMF5kEwbkw8jl_jxPlC2PO/view?usp=sharing">https://drive.google.com/file/d/1_SkgXHeOW7yMF5kEwbkw8jl_jxPlC2PO/view?usp=sharing</a>
+        </div>
+        <div class="certificadoContainer">
+            <h3>Certificado de Registro de Programa de Computador - Aplicativo Análise de Risco de Suicídio</h3>
+            <p>Disponível em:</p>
+            <a href="https://drive.google.com/file/d/1uLyweVvlPbUue3Zk-V0hmRy9O1n_Wh-N/view?usp=sharing">https://drive.google.com/file/d/1uLyweVvlPbUue3Zk-V0hmRy9O1n_Wh-N/view?usp=sharing</a>
+        </div>
+        <div class="certificadoContainer">
+            <h3>Certificado de Registro de Programa de Computador - Aplicativo Atlas</h3>
+            <p>Disponível em: <span><a href="https://drive.google.com/file/d/1QNScPM0Dc5Y6UVM9b-WZN0PZ99d66FAK/view?usp=sharing">https://drive.google.com/file/d/1QNScPM0Dc5Y6UVM9b-WZN0PZ99d66FAK/view?usp=sharing</a></span></p>
+            
+        </div>
+    </section>
+    <section class="contato">
+        <h1>Contato</h1>
+        <div class="btnContainer">
+            <a href="https://github.com/SabrinaCoelho" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.2467C6.475 2.2467 2 6.7217 2 12.2467C2 16.6717 4.8625 20.4092 8.8375 21.7342C9.3375 21.8217 9.525 21.5217 9.525 21.2592C9.525 21.0217 9.5125 20.2342 9.5125 19.3967C7 19.8592 6.35 18.7842 6.15 18.2217C6.0375 17.9342 5.55 17.0467 5.125 16.8092C4.775 16.6217 4.275 16.1592 5.1125 16.1467C5.9 16.1342 6.4625 16.8717 6.65 17.1717C7.55 18.6842 8.9875 18.2592 9.5625 17.9967C9.65 17.3467 9.9125 16.9092 10.2 16.6592C7.975 16.4092 5.65 15.5467 5.65 11.7217C5.65 10.6342 6.0375 9.7342 6.675 9.0342C6.575 8.7842 6.225 7.7592 6.775 6.3842C6.775 6.3842 7.6125 6.1217 9.525 7.4092C10.325 7.1842 11.175 7.0717 12.025 7.0717C12.875 7.0717 13.725 7.1842 14.525 7.4092C16.4375 6.1092 17.275 6.3842 17.275 6.3842C17.825 7.7592 17.475 8.7842 17.375 9.0342C18.0125 9.7342 18.4 10.6217 18.4 11.7217C18.4 15.5592 16.0625 16.4092 13.8375 16.6592C14.2 16.9717 14.5125 17.5717 14.5125 18.5092C14.5125 19.8467 14.5 20.9217 14.5 21.2592C14.5 21.5217 14.6875 21.8342 15.1875 21.7342C17.1727 21.064 18.8977 19.7882 20.1198 18.0862C21.3419 16.3843 21.9995 14.342 22 12.2467C22 6.7217 17.525 2.2467 12 2.2467Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+        <div class="btnContainer">
+            <a href="https://www.linkedin.com/in/sabrina-coelho-382a511aa/" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 4.32353V19.6765C21 20.0275 20.8606 20.3641 20.6123 20.6123C20.3641 20.8606 20.0275 21 19.6765 21H4.32353C3.97251 21 3.63586 20.8606 3.38765 20.6123C3.13944 20.3641 3 20.0275 3 19.6765V4.32353C3 3.97251 3.13944 3.63586 3.38765 3.38765C3.63586 3.13944 3.97251 3 4.32353 3H19.6765C20.0275 3 20.3641 3.13944 20.6123 3.38765C20.8606 3.63586 21 3.97251 21 4.32353ZM8.29412 9.88235H5.64706V18.3529H8.29412V9.88235ZM8.53235 6.97059C8.53375 6.77036 8.49569 6.57182 8.42035 6.3863C8.34502 6.20078 8.23387 6.03191 8.09328 5.88935C7.95268 5.74678 7.78537 5.6333 7.60091 5.5554C7.41646 5.47749 7.21846 5.43668 7.01824 5.43529H6.97059C6.5634 5.43529 6.17289 5.59705 5.88497 5.88497C5.59705 6.17289 5.43529 6.5634 5.43529 6.97059C5.43529 7.37777 5.59705 7.76828 5.88497 8.05621C6.17289 8.34413 6.5634 8.50588 6.97059 8.50588C7.17083 8.51081 7.37008 8.47623 7.55696 8.40413C7.74383 8.33202 7.91467 8.2238 8.0597 8.08565C8.20474 7.94749 8.32113 7.78212 8.40223 7.59897C8.48333 7.41582 8.52755 7.21848 8.53235 7.01824V6.97059ZM18.3529 13.2071C18.3529 10.6606 16.7329 9.67059 15.1235 9.67059C14.5966 9.6442 14.0719 9.75644 13.6019 9.9961C13.1318 10.2358 12.7328 10.5945 12.4447 11.0365H12.3706V9.88235H9.88235V18.3529H12.5294V13.8476C12.4911 13.3862 12.6365 12.9283 12.9339 12.5735C13.2313 12.2186 13.6567 11.9954 14.1176 11.9524H14.2182C15.06 11.9524 15.6847 12.4818 15.6847 13.8159V18.3529H18.3318L18.3529 13.2071Z" fill="black"/>
+                </svg>
+            </a>
+        </div>
+        <div class="btnContainer">
+            <a class="global" href="mailto:sabrinateodoro1019@hotmail.com">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white"/>
+                    <path d="M3.5 5.5L10.5858 12.5858C11.3668 13.3668 12.6332 13.3668 13.4142 12.5858L20.5 5.5M4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>Sabrina Coelho - 2023</p>
+        </div>
+    </footer>
+    <script src="assets/geral.js"></script>
+</body>
+</html>

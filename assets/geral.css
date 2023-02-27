@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --nav-bgcolor: deeppink;
+    --bg: white;
+    --bg-btn: black;
+    --text-color: black;
+    --svg-nav-path-fill: black;
+    --svg-nav-path-stroke: black;
+    --svg-path-fill: white;
+    --svg-path-stroke: white;
+    --bg-selection: black;
+    --text-color-selection: white;
+}
+/* :root{
+    --nav-bgcolor: deeppink;
+    --bg: black;
+    --bg-btn: white;
+    --text-color: white;
+    --svg-nav-path-fill: white;
+    --svg-nav-path-stroke: white;
+    --svg-path-fill: black;
+    --svg-path-stroke: black;
+    --bg-selection: deeppink;
+    --text-color-selection: white;
+} */
+body{
+    background-color: var(--bg);
+    font-family: 'Ubuntu Mono', monospace;
+    color: var(--text-color);
+}
+section{
+    max-width: 60rem;
+    margin: auto;
+    font-weight: normal;
+}
+/* ------------ APRESENTACAO ------------- */
+.apresentacao{
+    margin-top: 2rem;
+}
+p{
+    text-align: justify;
+}
+.profilePic{
+    height: 300px;
+    width: 300px;
+    background-color: var(--bg);
+    border-radius: 50%;
+    background-image: url('SabrinaTeodoro.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+.profilePic + h1{
+    text-align: center;
+}
+h1{
+    margin: 1rem 0;
+}
+::selection {
+    color: var(--text-color-selection);
+    background: var(--bg-selection);
+}
+/* -------- SVG + links relacionados ------------ */
+.btnContainer{
+    display: inline-block;
+    margin: 0 5px;
+}
+.btnContainer a{
+    background-color: var(--bg-btn);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 3px;
+}
+.btnContainer a:not(.global) svg > path{
+    fill: var(--svg-path-fill);
+}
+.btnContainer a svg > rect{
+    fill: var(--bg-btn);
+}
+.btnContainer .global svg > path:nth-child(2){
+    stroke: var(--svg-path-stroke);
+}
+
+/* --svg-path-stroke: white; */
+/* ------- PROJETO---------- */
+.projeto{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-items: stretch;
+}
+table{
+    display: block;
+    margin-top: 1rem;
+}
+td{
+    padding: 5px 0;
+}
+.imgProjeto{
+    height: 200px;
+    background-color: var(--bg);
+    border-radius: 5px;
+    margin: 1rem .5rem;
+}
+.imgProjeto img{
+    height: 100%;
+    width: 410px;
+    border-radius: 5px;
+}
+/* ------- CERTIFICADOS -------- */
+.certificadoContainer{
+    margin: 1rem 0;
+    word-break: break-all;
+}
+footer p{
+    text-align: center;
+}
+footer{
+    margin-top: 2rem;
+    padding: 30px 0;
+}
+@media screen and (max-width: 960px){
+    section{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-width: 900px){
+    .projeto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .profilePic{
+        height: 200px;
+        width: 200px;
+    }
+    .imgProjeto img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px){
+    td{
+        display: table;
+    }
+}
